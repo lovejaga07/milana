@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Милана — Дизайнер и контент-креатор</title>
+  <meta name="description" content="Портфолио Миланы: ведение Telegram-каналов, карточки маркетплейсов, редизайн и новый дизайн сайтов, иллюстрации и графика на заказ." />
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --surface: #121318;
+      --text: #ffffff;
+      --muted: #c6c9cf;
+      --primary: #f8a8c9;
+      --accent: #ffd1e8;
+      --card: #161823;
+      --ok: #86efac;
+      --warn: #fde68a;
+      --radius-xl: 24px;
+      --radius-lg: 16px;
+      --radius-md: 12px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --shadow-soft: 0 6px 18px rgba(0,0,0,.25);
+      --gap: clamp(16px, 2vw, 24px);
+    }
+    body {
+      margin: 0;
+      font: 500 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Inter", "Helvetica Neue", Arial;
+      color: var(--text);
+      background: radial-gradient(1200px 900px at 85% -10%, rgba(255,182,193,.08), transparent 60%),
+                  radial-gradient(1200px 900px at -10% 10%, rgba(255,105,180,.06), transparent 60%),
+                  var(--bg);
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; border-radius: 12px; display: block; }
+    .container { width: min(1120px, 92vw); margin: 0 auto; }
+    header { position: sticky; top: 0; backdrop-filter: blur(10px); background: rgba(11,12,16,0.7); border-bottom: 1px solid rgba(255,255,255,.06); }
+    .nav { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
+    .brand { display: flex; gap: 12px; align-items: center; }
+    .logo { width: 36px; height: 36px; border-radius: 12px; background: linear-gradient(135deg, var(--primary), var(--accent)); box-shadow: var(--shadow-soft); }
+    .brand h1 { margin: 0; font-size: 16px; letter-spacing: .6px; text-transform: uppercase; color: var(--muted); }
+    .menu { display: flex; gap: 18px; }
+    .btn { display: inline-flex; padding: 12px 18px; border-radius: 14px; border: 1px solid rgba(255,255,255,.12); background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); color: var(--text); font-weight: 600; }
+    .btn.primary { background: linear-gradient(135deg, var(--primary), var(--accent)); color: #0b0c10; border-color: transparent; }
+    .hero { padding: 72px 0; text-align: center; }
+    .h1 { font-size: clamp(34px, 5vw, 56px); font-weight: 800; margin: 16px 0; }
+    .lead { color: var(--muted); font-size: 18px; }
+    .section { padding: 72px 0; }
+    h2 { font-size: clamp(24px, 3.6vw, 36px); margin: 0 0 12px; text-align: center; }
+    p.sub { color: var(--muted); margin: 0 0 20px; text-align: center; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: var(--gap); }
+    .tile { background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.06); border-radius: var(--radius-lg); padding: 16px; text-align:center; }
+    .tile h3 { margin: 8px 0; }
+    .chip { display:inline-block; font-size: 12px; background: var(--primary); color:#0b0c10; padding: 6px 10px; border-radius: 999px; font-weight: 700; }
+    .cards { display: grid; gap: var(--gap); grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); }
+    footer { padding: 32px 0; text-align: center; color: var(--muted); border-top: 1px solid rgba(255,255,255,.08); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>Милана — Дизайнер и контент-креатор</h1>
+      </div>
+      <nav class="menu">
+        <a href="#work">Портфолио</a>
+        <a href="#services">Услуги</a>
+        <a href="#about">Обо мне</a>
+        <a href="#contact" class="btn">Связаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2 class="h1">Создаю визуал, который работает</h2>
+      <p class="lead">Ведение Telegram-каналов, карточки маркетплейсов, сайты и иллюстрации на заказ.</p>
+      <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap; justify-content:center;">
+        <a class="btn primary" href="#work">Смотреть портфолио</a>
+        <a class="btn" href="#contact">Обсудить проект</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="container">
+      <h2>Примеры работ</h2>
+      <p class="sub">Telegram, маркетплейсы, сайты и иллюстрации</p>
+      <div class="grid">
+        <div class="tile">
+          <img src="portfolio_images/tg_case_1.jpg" alt="Кейс Telegram 1" />
+          <h3>Telegram-канал</h3>
+          <p class="sub">Единый стиль постов, рост ER до 18,7%</p>
+          <span class="chip">SMM</span>
+        </div>
+        <div class="tile">
+          <img src="portfolio_images/tg_case_2.jpg" alt="Кейс Telegram 2" />
+          <h3>Telegram-оформление</h3>
+          <p class="sub">Обложки, посты, графика</p>
+          <span class="chip">Design</span>
+        </div>
+        <div class="tile">
+          <img src="https://via.placeholder.com/600x400?text=Marketplace+Case" alt="Карточки маркетплейса" />
+          <h3>Карточки маркетплейса</h3>
+          <p class="sub">Продающие визуалы для Wildberries и Ozon</p>
+          <span class="chip">E-commerce</span>
+        </div>
+        <div class="tile">
+          <img src="https://via.placeholder.com/600x400?text=Website+Redesign" alt="Редизайн сайта" />
+          <h3>Редизайн сайта</h3>
+          <p class="sub">До/после, рост конверсии на 34%</p>
+          <span class="chip">Web</span>
+        </div>
+        <div class="tile">
+          <img src="https://via.placeholder.com/600x400?text=Landing+Design" alt="Новый сайт" />
+          <h3>Новый сайт</h3>
+          <p class="sub">Современный лендинг с формами заявок</p>
+          <span class="chip">UI/UX</span>
+        </div>
+        <div class="tile">
+          <img src="https://via.placeholder.com/600x400?text=Illustrations" alt="Иллюстрации" />
+          <h3>Иллюстрации и графика</h3>
+          <p class="sub">Рисунки, паттерны, иконки</p>
+          <span class="chip">Art</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Свяжитесь со мной</h2>
+      <p class="sub">Опишите задачу — предложу решение и сроки</p>
+      <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap; justify-content:center;">
+        <a class="btn primary" href="mailto:hello@milana.design">hello@milana.design</a>
+        <a class="btn" href="https://t.me/your_nickname" target="_blank">Telegram</a>
+        <a class="btn" href="https://behance.net/yourprofile" target="_blank">Behance</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="y"></span> Милана • <a href="https://milanaportfolio.site" style="color:var(--accent)">milanaportfolio.site</a></div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
